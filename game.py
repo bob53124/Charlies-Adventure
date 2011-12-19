@@ -67,7 +67,7 @@ def part3():
     part3 = input("> ")
     
     if part3 == "1" or part3 == "2":
-        print("Your body survives powered by a mind of pure jelly.")
+        print("Your body survives powered by a mind of pure jelly.\nFor answering correctly I will give you the first half of the platinum code\nYou will need this later\nIt is: peng")
         part3_restart()
     elif part3 == "e":
         part1()
@@ -154,7 +154,7 @@ def part6():
     part6 = input("> ")
     
     if part6 == "n":
-        not_ready()
+        part35()
     elif part6 == "s":
         part5()
     elif part6 == "exit":
@@ -175,7 +175,7 @@ def part7():
     if part7 == "n":
         part5()
     elif part7 == "s":
-        not_ready()
+        part34()
     elif part7 == "exit":
         exit()
     elif part7 == "save":
@@ -676,6 +676,81 @@ def part30():
         print("I don't understand, what %s means" % part30)
         part30_restart()
 
+def part31():
+    print("Welcome to the GOLD room\nDoors lead north, east and west\nTo get the second half of the platinum code\nType in the gold code")
+    part31 = input("> ")
+    if part31 == "n":
+        part30()
+    elif part31 == "e":
+        part29()
+    elif part31 == "w":
+        part33()
+    elif part31 == "panther":
+        print("Well Done\nThe second half of the platinum code is: uin")
+        part31_restart()
+    elif part31 == "exit":
+        exit()
+    elif part31 == "save":
+        print("78820")
+        part31_restart()
+    else:
+        print("I don't know what you mean")
+        part31_restart()
+
+def part32():
+    print("You are in a bend of the path\nYou can only go south and east")
+    part32 = input("> ")
+    if part32 == "s":
+        part33()
+    elif part32 == "e":
+        part30()
+    elif part32 == "exit":
+        exit()
+    elif part32 == "save":
+        print("53148")
+        part32_restart()
+    else:
+        print("???????????? >.<")
+        part32_restart()
+
+def part33():
+    print("You are on a muddy winding path\nThe path continues north and west\nAnd there is an out-building to the east")
+    part33 = input("> ")
+    if part33 == "n":
+        part32()
+    elif part33 == "e":
+        part31()
+    elif part33 == "w":
+        part34()
+    elif part33 == "exit":
+        exit()
+    elif part33 == "save":
+        print("72589")
+        part33_restart()
+    else:
+        print("What does %s mean?" % part33)
+        part44_restart()
+
+def part34():
+    print("You are at the beggining / end of the muddy path\nThere is a door to the north and the path continues to the east")
+    part34 = input("> ")
+    if part34 == "n":
+        part7()
+    elif part34 == "e":
+        part33()
+    elif part34 == "exit":
+        exit()
+    elif part34 == "save":
+        print("41963")
+        part34_restart()
+    else:
+        print("I don't understand %s" % part34)
+        part34_restart()
+
+def part35():
+    print("You are in a SIGN room\nThe sign reads\nTo the south is a passage way\nTo the north is the Subtraction Room\nAnd to the east is the Addition Room")
+    part35 = input("> ")
+
 def part1_restart():
     part1()
 
@@ -772,6 +847,27 @@ def part29_restart():
 def part30_restart():
     part30()
 
+def part31_restart():
+    part31()
+
+def part32_restart():
+    part32()
+
+def part33_restart():
+    part33()
+
+def part34_restart():
+    part34()
+
+def part35_restart():
+    part35()
+
+def part36_restart():
+    part36()
+
+def part37_restart():
+    part37()
+
 def exit():
     print("Goodbye.")
 
@@ -801,7 +897,9 @@ def savecodes():
     
     code = input("> ")
     
-    if code == "41338":
+    if code == "exit":
+        exit()
+    elif code == "41338":
         part1()
     elif code == "82866":
         part2()
@@ -865,6 +963,20 @@ def savecodes():
         part29()
     elif code == "25857":
         part30()
+    elif code == "78820":
+        part31()
+    elif code == "53148":
+        part32()
+    elif code == "72589":
+        part33()
+    elif code == "41963":
+        part34()
+    elif code == "17547":
+        part35()
+    elif code == "46517":
+        part36()
+    elif code == "89288":
+        part37()
     else:
         print("Wrong")
         savecodes_restart()
