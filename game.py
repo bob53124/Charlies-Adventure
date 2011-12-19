@@ -693,7 +693,6 @@ def part21_restart():
 def part22_restart():
     part22()
 
-<<<<<<< HEAD
 def part23_restart():
     part23()
 
@@ -711,9 +710,6 @@ def part27_restart():
 
 def exit():
     print("Goodbye.")
-=======
-
->>>>>>> 290509a102ee66b0f22d798c4ff64774e40a7d4b
 
 def not_ready():
     print("This Feature Has Not Yet Been Implemented. Sorry")
