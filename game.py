@@ -621,6 +621,24 @@ def part27():
         print("What does %s mean, exactly" % part27)
         part27_restart()
 
+def part28():
+    print("You are still on the seemingly endless path\nYou can continue on the path north or west\nOr you can go into the out-building to the south")
+    part28 = input("> ")
+    if part28 == "n":
+        part27()
+    elif part28 == "w":
+        part30()
+    elif part28 == "s":
+        part29()
+    elif part28 == "exit":
+        exit()
+    elif part28 == "save":
+        print("21273")
+        part28_restart()
+    else:
+        "What?"
+        part28_restart()
+
 def part1_restart():
     part1()
 
@@ -707,6 +725,9 @@ def part26_restart():
 
 def part27_restart():
     part27()
+
+def part28_restart():
+    part28()
 
 def exit():
     print("Goodbye.")
@@ -795,6 +816,8 @@ def savecodes():
         part26()
     elif code == "61994":
         part27()
+    elif code == "21273":
+        part28()
     else:
         print("Wrong")
         savecodes_restart()
