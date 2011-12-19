@@ -639,6 +639,43 @@ def part28():
         "What?"
         part28_restart()
 
+def part29():
+    print("Welcome to the silver room\nThere are doors leading north and west\nEnter the silver code and you will recieve...\nThe second half of the gold code!")
+    part29 = input("> ")
+    if part29 == "n":
+        part28()
+    elif part29 == "w":
+        part31()
+    elif part29 == "lynx":
+        print("Correct\nThe second half of the gold code is: ther")
+        part29_restart()
+    elif part29 == "exit":
+        exit()
+    elif part29 == "save":
+        print("33482")
+        part29_restart()
+    else:
+        print("WHAT DOES THAT MEAN!!!")
+        part29_restart()
+
+def part30():
+    print("You are still in the stupidly long path\nThere is a long to the south\nAnd the path continues east and west")
+    part30 = input("> ")
+    if part30 == "e":
+        part28()
+    elif part30 == "w":
+        part32()
+    elif part30 == "s":
+        part31()
+    elif part30 == "exit":
+        exit()
+    elif part30 == "save":
+        print("25857")
+        part30_restart()
+    else:
+        print("I don't understand, what %s means" % part30)
+        part30_restart()
+
 def part1_restart():
     part1()
 
@@ -729,6 +766,12 @@ def part27_restart():
 def part28_restart():
     part28()
 
+def part29_restart():
+    part29()
+
+def part30_restart():
+    part30()
+
 def exit():
     print("Goodbye.")
 
@@ -818,6 +861,10 @@ def savecodes():
         part27()
     elif code == "21273":
         part28()
+    elif code == "33482":
+        part29()
+    elif code == "25857":
+        part30()
     else:
         print("Wrong")
         savecodes_restart()
