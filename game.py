@@ -750,6 +750,54 @@ def part34():
 def part35():
     print("You are in a SIGN room\nThe sign reads\nTo the south is a passage way\nTo the north is the Subtraction Room\nAnd to the east is the Addition Room")
     part35 = input("> ")
+    if part35 == "n":
+        part37()
+    elif part35 == "s":
+        part6()
+    elif part35 == "e":
+        part36()
+    elif part36 == "save":
+        print("17547")
+        part36_restart()
+    elif part36 == "exit":
+        exit()
+    else:
+        print("DOES NOT COMPUTE")
+        part36_restart()
+
+def part36():
+    print("Welcome to the Addition Room\nThe only door is to the west\nSolve 768 + 256 to get the second half of the silver code")
+    part36 = input("> ")
+    if part36 == "w":
+        part35()
+    elif part36 == "1024":
+        print("Correct\nThe second half of the silver code is: nx")
+        part36_restart()
+    elif part36 == "exit":
+        exit()
+    elif part36 == "save":
+        print("46517")
+        part36_restart()
+    else:
+        print("Computer says NO!")
+        part36_restart()
+
+def part37():
+    print("Welcome to the Subtraction Room\nThe only door is to the south\nSolve 2012 - 1094 to get the first half of the gold code")
+    part37 = input("> ")
+    if part37 == "s":
+        part35()
+    elif part37 == "918":
+        print("Correct\nThe second half of the silver code is: pan")
+        part37_restart()
+    elif part37 == "exit":
+        exit()
+    elif part37 == "save":
+        print("89288")
+        part37_restart()
+    else:
+        print("WRONG!")
+        part37_restart()
 
 def part1_restart():
     part1()
